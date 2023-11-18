@@ -22,5 +22,12 @@ public class Mavenproject1 {
         ApplicationContext factory = new ClassPathXmlApplicationContext("spring.xml");
         Alien obj = (Alien) factory.getBean("Alien");
         obj.code();
+        obj.age=15;
+        System.out.println(obj.age);
+        
+        Alien obj1 = (Alien) factory.getBean("Alien");
+        obj1.code();
+        obj1.age=10;
+        System.out.println(obj1.age);
     }
 }

@@ -9,6 +9,10 @@ package com.mycompany.mavenproject1;
  * @author Lenovo
  */
 class Alien {
+    int age;
+    public Alien(){
+        System.out.println("in alien");
+    }
     public void code(){
         System.out.println("coding..");
     }
