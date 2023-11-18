@@ -9,11 +9,31 @@ package com.mycompany.mavenproject1;
  * @author Lenovo
  */
 class Alien {
-    int age;
+    private int age;
+    private Laptop lap;
+
+    public void setLap(Laptop lap) {
+        this.lap = lap;
+    }
+
+    public Laptop getLap() {
+        return lap;
+    }
+    
     public Alien(){
         System.out.println("in alien");
     }
+    
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public int getAge() {
+        return age;
+    }
     public void code(){
+        lap.compile();
         System.out.println("coding..");
     }
+    
 }
