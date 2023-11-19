@@ -31,8 +31,12 @@ class Alien {
     public int getAge() {
         return age;
     }
+
+    public Alien(int age) {
+        this.age = age;
+    }
     public void code(){
-        lap.compile();
+        lap.compile();  
         System.out.println("coding..");
     }
     
